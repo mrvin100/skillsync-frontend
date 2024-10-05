@@ -1,0 +1,28 @@
+meta {
+  name: login
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/v1/skill-sync/auth/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "admin@gmail.com",
+      "password": "password"
+  }
+}
+
+body:multipart-form {
+  firstName: andre
+  lastName: johnson
+  phone: +237654789049
+  password: password
+  role: CLIENT
+  email: andre@gmail.com
+  profile: @file(C:\Users\parfa\Pictures\profileDark.png)
+}

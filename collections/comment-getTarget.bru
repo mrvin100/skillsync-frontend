@@ -1,0 +1,22 @@
+meta {
+  name: comment-getTarget
+  type: http
+  seq: 25
+}
+
+post {
+  url: http://localhost:3000/api/v1/skill-sync/comments/66ffda1cdff3b87cda952fcf
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY3NCIsImVtYWlsIjoibWF0dGhldy5nb256YWxlekBleGFtcGxlLmNvbSIsInJvbGUiOiJGUkVFTEFOQ0UiLCJpYXQiOjE3MjgwMzk4MjIsImV4cCI6MTcyODA2MTQyMn0.Fp70KvNcH2vBAzyLC_e2i2P72ltrmql3YIALPAScBQM
+}
+
+body:json {
+  {
+      "content": "a really appreciate how the project when on, and the result was really awesome!",
+      "tag": "GOOD"
+  }
+}

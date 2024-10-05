@@ -1,0 +1,32 @@
+meta {
+  name: freelance-create
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://localhost:3000/api/v1/skill-sync/auth/sign-up
+  body: multipartForm
+  auth: none
+}
+
+body:json {
+  {
+      "firstName": "andre",
+      "lastName": "johnson",
+      "phone": "+237654789046",
+      "password": "password",
+      "role": "CLIENT",
+      "email": "andre@gmail.com"
+  }
+}
+
+body:multipart-form {
+  firstName: zoe
+  lastName: johnson
+  phone: +237654789048
+  password: password
+  role: CLIENT
+  email: zoe@gmail.com
+  profile: @file(C:\Users\parfa\Pictures\springboot.png)
+}

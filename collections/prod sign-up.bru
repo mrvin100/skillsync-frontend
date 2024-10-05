@@ -1,0 +1,32 @@
+meta {
+  name: prod sign-up
+  type: http
+  seq: 35
+}
+
+post {
+  url: https://skill-sync-8dtw.onrender.com/api/v1/skill-sync/auth/sign-up
+  body: multipartForm
+  auth: none
+}
+
+body:json {
+  {
+      "firstName": "andre",
+      "lastName": "johnson",
+      "phone": "+237654789046",
+      "password": "password",
+      "role": "CLIENT",
+      "email": "andre@gmail.com"
+  }
+}
+
+body:multipart-form {
+  firstName: stac
+  lastName: virus
+  phone: +237654789040
+  password: password
+  role: FREELANCE
+  email: stac@gmail.com
+  profile: @file(C:\Users\parfa\Pictures\reactjs.png)
+}

@@ -1,0 +1,25 @@
+meta {
+  name: update user infos
+  type: http
+  seq: 11
+}
+
+put {
+  url: http://localhost:3000/api/v1/skill-sync/auth/users/details/66f3ea82aa50598d2559b659
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "firstName": "stacVirus"
+  }
+}
+
+body:multipart-form {
+  phone: +237654789049
+  password: password
+  role: CLIENT
+  email: andre@gmail.com
+  profile: @file(C:\Users\parfa\Pictures\profileDark.png)
+}

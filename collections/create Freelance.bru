@@ -1,0 +1,22 @@
+meta {
+  name: create Freelance
+  type: http
+  seq: 8
+}
+
+get {
+  url: http://localhost:3000/api/v1/skill-sync/freelance/66f6b0f1048d94c047349078
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjY2YjY1MDcwMTdjNTgwMTY2ZmRiNSIsImVtYWlsIjoiYW5kcmVAZ21haWwuY29tIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcyNzQ0MDA4NiwiZXhwIjoxNzI3NDYxNjg2fQ.UUec3XD5cW9TF5u3eDAymEOAvJ7QimuRYZffqGQZwYI
+}
+
+body:json {
+  {
+    "city": "Ouest",
+    "tarif": 2300
+  }
+}

@@ -1,0 +1,32 @@
+meta {
+  name: passreset
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:3000/api/v1/skill-sync/auth/pass-reset
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY2ZCIsImVtYWlsIjoibWlhLndhbGtlckBleGFtcGxlLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MjgwMTU1NDMsImV4cCI6MTcyODAzNzE0M30.-slXsYdLVUbiTXQpScEHxoJ80_10Qf4Sp72PhMtMVcs
+}
+
+body:json {
+  {
+      "newPass": "password",
+      "oldPass": "miapass123"
+  }
+}
+
+body:multipart-form {
+  firstName: andre
+  lastName: johnson
+  phone: +237654789049
+  password: password
+  role: CLIENT
+  email: andre@gmail.com
+  profile: @file(C:\Users\parfa\Pictures\profileDark.png)
+}

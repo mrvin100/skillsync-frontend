@@ -1,0 +1,26 @@
+meta {
+  name: mission-freelancePostulated
+  type: http
+  seq: 30
+}
+
+get {
+  url: http://localhost:3000/api/v1/skill-sync/missions/get/user/66f3ea82aa50598d2559b674
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY2ZCIsImVtYWlsIjoibWlhLndhbGtlckBleGFtcGxlLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MjgwNDM0MDMsImV4cCI6MTcyODA2NTAwM30.WYUgcPygs-_WpQYvTc1RiMDCaRSIcNYgrUPVx6GYG9o
+}
+
+body:json {
+  {
+      "title": "web page",
+      "description": "please I want a web site that will my corporation in the best and most attractive way.",
+      "budget": {
+          "value": 150,
+          "currency": "$"
+          }
+  }
+}

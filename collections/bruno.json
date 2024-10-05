@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "skillSync",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

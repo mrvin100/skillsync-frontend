@@ -1,0 +1,21 @@
+meta {
+  name: project-rating
+  type: http
+  seq: 34
+}
+
+get {
+  url: http://localhost:3000/api/v1/skill-sync/projects/get/collab
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY3NCIsImVtYWlsIjoibWF0dGhldy5nb256YWxlekBleGFtcGxlLmNvbSIsInJvbGUiOiJGUkVFTEFOQ0UiLCJpYXQiOjE3MjgwMzk4MjIsImV4cCI6MTcyODA2MTQyMn0.Fp70KvNcH2vBAzyLC_e2i2P72ltrmql3YIALPAScBQM
+}
+
+body:json {
+  {
+      "title": "comprehensive and imersive web site"
+  }
+}

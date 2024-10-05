@@ -1,0 +1,26 @@
+meta {
+  name: updateProfileImage
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:3000/api/v1/skill-sync/auth/users/set-profile/66f3ea82aa50598d2559b66d
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY1OSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNzI4MDE1ODM4LCJleHAiOjE3MjgwMzc0Mzh9.AgZnDpyMKlKj7QnBr218I7lxq4JS8cGxX2rzSgfyzhY
+}
+
+body:json {
+  {
+      "email": "andre@gmail.com",
+      "password": "password"
+  }
+}
+
+body:multipart-form {
+  profile: @file(C:\Users\parfa\Pictures\reactjs.png)
+}

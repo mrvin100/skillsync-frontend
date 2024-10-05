@@ -1,0 +1,24 @@
+meta {
+  name: mission-update
+  type: http
+  seq: 32
+}
+
+post {
+  url: http://localhost:3000/api/v1/skill-sync/missions/set-cat/66ffd9d6dff3b87cda952fcc
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY2ZCIsImVtYWlsIjoibWlhLndhbGtlckBleGFtcGxlLmNvbSIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE3MjgwNDM0MDMsImV4cCI6MTcyODA2NTAwM30.WYUgcPygs-_WpQYvTc1RiMDCaRSIcNYgrUPVx6GYG9o
+}
+
+body:json {
+  {
+      "categories": [
+        "66f7daf6eb6ee3813998fa1f",
+        "66f7db18eb6ee3813998fa25"
+      ]
+  }
+}

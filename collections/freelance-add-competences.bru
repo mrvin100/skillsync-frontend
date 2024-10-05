@@ -1,0 +1,24 @@
+meta {
+  name: freelance-add-competences
+  type: http
+  seq: 15
+}
+
+post {
+  url: http://localhost:3000/api/v1/skill-sync/freelances/set/cat
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZjNlYTgyYWE1MDU5OGQyNTU5YjY3NCIsImVtYWlsIjoibWF0dGhldy5nb256YWxlekBleGFtcGxlLmNvbSIsInJvbGUiOiJGUkVFTEFOQ0UiLCJpYXQiOjE3MjgwMzk4MjIsImV4cCI6MTcyODA2MTQyMn0.Fp70KvNcH2vBAzyLC_e2i2P72ltrmql3YIALPAScBQM
+}
+
+body:json {
+  {
+      "categories": [
+        "66f7daf6eb6ee3813998fa1f",
+        "66f7db18eb6ee3813998fa25"
+      ]
+  }
+}

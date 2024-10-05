@@ -1,0 +1,20 @@
+meta {
+  name: mission-create
+  type: http
+  seq: 20
+}
+
+post {
+  url: http://localhost:3000/api/v1/skill-sync/projects/66f3ea82aa50598d2559b674
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "tarif": {
+        "value": 1200
+      },
+      "city": "Douala"
+  }
+}
